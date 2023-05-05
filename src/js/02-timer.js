@@ -27,6 +27,20 @@ function addLeadingZero(value) {
 
 const startBtn = document.querySelector('button[data-start]');
 startBtn.disabled = true;
+startBtn.style.backgroundColor = 'yellowgreen';
+startBtn.style.borderColor = 'transparent';
+startBtn.style.borderRadius = '4px';
+startBtn.style.height = '30px';
+startBtn.style.width = '100px';
+startBtn.style.fontSize = '17px';
+
+// height: 30px;
+// width: 100px;
+// font-size: 17px;
+// border-radius: 4px;
+// border-color: transparent;
+// background-color: yellowgreen;
+
 const daySpan = document.querySelector('[data-days]');
 const hourSpan = document.querySelector('[data-hours]');
 const minuteSpan = document.querySelector('[data-minutes]');

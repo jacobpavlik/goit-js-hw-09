@@ -23,14 +23,6 @@ input#datetime-picker {
   margin-bottom: 10px;
   font-size: 17px;
 }
-button {
-  height: 30px;
-  width: 100px;
-  font-size: 17px;
-  border-radius: 4px;
-  border-color: transparent;
-  background-color: yellowgreen;
-}
 .timer {
   display: flex;
 }
