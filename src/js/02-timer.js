@@ -34,13 +34,6 @@ startBtn.style.height = '30px';
 startBtn.style.width = '100px';
 startBtn.style.fontSize = '17px';
 
-// height: 30px;
-// width: 100px;
-// font-size: 17px;
-// border-radius: 4px;
-// border-color: transparent;
-// background-color: yellowgreen;
-
 const daySpan = document.querySelector('[data-days]');
 const hourSpan = document.querySelector('[data-hours]');
 const minuteSpan = document.querySelector('[data-minutes]');
@@ -61,7 +54,7 @@ const options = {
       selectedDates[0];
       startBtn.disabled = false;
       startBtn.addEventListener('click', () => {
-        setInterval(() => {
+        const interval = setInterval(() => {
           const timeToCount = selectedDates[0].getTime() - new Date().getTime();
           if (timeToCount > 0) {
             convertMs(timeToCount);
@@ -74,7 +67,7 @@ const options = {
               convertMs(timeToCount).seconds
             );
           } else {
-            clearInterval();
+            clearInterval(interval);
           }
         }, 1000);
       });
