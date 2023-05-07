@@ -32,7 +32,7 @@ createPromisesBtn.addEventListener('click', event => {
   event.preventDefault();
   let delay = inputDelay.value - inputStep.value;
   for (let i = 0; i < inputAmount.value; i += 1) {
-    position = i;
+    let position = i;
     delay = +delay;
     delay += +inputStep.value;
     createPromise(position, delay);
