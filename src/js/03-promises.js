@@ -25,7 +25,6 @@ function createPromise(position, delay) {
       });
     }
   }, delay);
-  console.log(`delay z setTimout ${delay}`);
 }
 
 createPromisesBtn.addEventListener('click', event => {
